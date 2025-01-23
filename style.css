@@ -3,6 +3,11 @@
     font-weight: 500px;
 }
 
+.page-top {
+    padding: 0;
+    margin: 0;
+}
+
 .header {
     width: 100%;
     height: 70px;
@@ -47,8 +52,7 @@
 
     .header-container {
         height: 50px;
-        padding: auto;
-        margin: auto;
+
     }
 
     .header-nav-list {
@@ -89,6 +93,13 @@
     }
 
 
+}
+
+@media screen and (max-width:767px) {
+    .header-container {
+        max-width: 100%;
+        margin: 0 16px;
+    }
 }
 
 .header-nav-list {
@@ -155,12 +166,26 @@ a {
     vertical-align: middle;
 }
 
+@media screen and (max-width:767px) {
+    .first-view-image-left-rectangle {
+        display: none;
+    }
+
+}
+
 .first-view-image-right-rectangle {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -10;
     vertical-align: middle;
+}
+
+@media screen and (max-width:767px) {
+    .first-view-image-right-rectangle {
+        display: none;
+    }
+
 }
 
 .first-view-image-oval {
@@ -170,6 +195,13 @@ a {
     vertical-align: middle;
 }
 
+@media screen and (max-width:767px) {
+    .first-view-image-oval {
+        display: none;
+    }
+
+}
+
 .first-view-image-man {
     position: absolute;
     right: 0;
@@ -177,6 +209,25 @@ a {
     width: 700px;
     z-index: -10;
     vertical-align: middle;
+}
+
+@media screen and (max-width:767px) {
+    .first-view-image-man {
+        display: none;
+    }
+
+}
+
+.first-view-whole-image {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .first-view-whole-image {
+        display: block;
+        margin-bottom: 7px;
+        width: 100%;
+    }
 }
 
 .first-view-container {
@@ -197,12 +248,12 @@ a {
 
 @media screen and (max-width: 767px) {
     .first-view-container {
+        padding-top: 0;
         padding-bottom: 20px;
         max-width: none;
         padding-left: 16px;
         padding-right: 16px;
         position: absolute;
-        bottom: -30px;
     }
 }
 
@@ -210,8 +261,7 @@ a {
 .first-view-content {
     position: relative;
     width: fit-content;
-    margin: 0;
-    padding: 0;
+
 }
 
 .first-view-content-title {
@@ -260,4 +310,9 @@ a {
 
 .first-view-content-button:hover {
     opacity: 0.8;
+}
+
+.first-view-content-sentence {
+    font-size: 12px;
+    line-height: 16px;
 }
